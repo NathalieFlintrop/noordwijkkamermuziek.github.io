@@ -1215,20 +1215,20 @@
     _addTouchEventListeners() {
       const start = event => {
         if (this._pointerEvent && (event.pointerType === POINTER_TYPE_PEN || event.pointerType === POINTER_TYPE_TOUCH)) {
-          this.touchStartX = event.clientX;
+          this.touchStartX = event.ClientX;
         } else if (!this._pointerEvent) {
-          this.touchStartX = event.touches[0].clientX;
+          this.touchStartX = event.touches[0].ClientX;
         }
       };
 
       const move = event => {
         // ensure swiping with one touch and not pinching
-        this.touchDeltaX = event.touches && event.touches.length > 1 ? 0 : event.touches[0].clientX - this.touchStartX;
+        this.touchDeltaX = event.touches && event.touches.length > 1 ? 0 : event.touches[0].ClientX - this.touchStartX;
       };
 
       const end = event => {
         if (this._pointerEvent && (event.pointerType === POINTER_TYPE_PEN || event.pointerType === POINTER_TYPE_TOUCH)) {
-          this.touchDeltaX = event.clientX - this.touchStartX;
+          this.touchDeltaX = event.ClientX - this.touchStartX;
         }
 
         this._handleSwipe();
@@ -2094,18 +2094,18 @@
   // means it doesn't take into account transforms.
 
   function getLayoutRect(element) {
-    var clientRect = getBoundingClientRect(element); // Use the clientRect sizes if it's not been transformed.
+    var ClientRect = getBoundingClientRect(element); // Use the ClientRect sizes if it's not been transformed.
     // Fixes https://github.com/popperjs/popper-core/issues/1223
 
     var width = element.offsetWidth;
     var height = element.offsetHeight;
 
-    if (Math.abs(clientRect.width - width) <= 1) {
-      width = clientRect.width;
+    if (Math.abs(ClientRect.width - width) <= 1) {
+      width = ClientRect.width;
     }
 
-    if (Math.abs(clientRect.height - height) <= 1) {
-      height = clientRect.height;
+    if (Math.abs(ClientRect.height - height) <= 1) {
+      height = ClientRect.height;
     }
 
     return {
@@ -2291,13 +2291,13 @@
     var endDiff = state.rects.reference[len] + state.rects.reference[axis] - popperOffsets[axis] - state.rects.popper[len];
     var startDiff = popperOffsets[axis] - state.rects.reference[axis];
     var arrowOffsetParent = getOffsetParent(arrowElement);
-    var clientSize = arrowOffsetParent ? axis === 'y' ? arrowOffsetParent.clientHeight || 0 : arrowOffsetParent.clientWidth || 0 : 0;
+    var ClientSize = arrowOffsetParent ? axis === 'y' ? arrowOffsetParent.ClientHeight || 0 : arrowOffsetParent.ClientWidth || 0 : 0;
     var centerToReference = endDiff / 2 - startDiff / 2; // Make sure the arrow doesn't overflow the popper if the center point is
     // outside of the popper bounds
 
     var min = paddingObject[minProp];
-    var max = clientSize - arrowRect[len] - paddingObject[maxProp];
-    var center = clientSize / 2 - arrowRect[len] / 2 + centerToReference;
+    var max = ClientSize - arrowRect[len] - paddingObject[maxProp];
+    var center = ClientSize / 2 - arrowRect[len] / 2 + centerToReference;
     var offset = within(min, center, max); // Prevents breaking syntax highlighting...
 
     var axisProp = axis;
@@ -2388,8 +2388,8 @@
 
     if (adaptive) {
       var offsetParent = getOffsetParent(popper);
-      var heightProp = 'clientHeight';
-      var widthProp = 'clientWidth';
+      var heightProp = 'ClientHeight';
+      var widthProp = 'ClientWidth';
 
       if (offsetParent === getWindow(popper)) {
         offsetParent = getDocumentElement(popper);
@@ -2575,12 +2575,12 @@
     var win = getWindow(element);
     var html = getDocumentElement(element);
     var visualViewport = win.visualViewport;
-    var width = html.clientWidth;
-    var height = html.clientHeight;
+    var width = html.ClientWidth;
+    var height = html.ClientHeight;
     var x = 0;
     var y = 0; // NB: This isn't supported on iOS <= 12. If the keyboard is open, the popper
     // can be obscured underneath it.
-    // Also, `html.clientHeight` adds the bottom bar height in Safari iOS, even
+    // Also, `html.ClientHeight` adds the bottom bar height in Safari iOS, even
     // if it isn't open, so if this isn't available, the popper will be detected
     // to overflow the bottom of the screen too early.
 
@@ -2617,13 +2617,13 @@
     var html = getDocumentElement(element);
     var winScroll = getWindowScroll(element);
     var body = (_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body;
-    var width = max(html.scrollWidth, html.clientWidth, body ? body.scrollWidth : 0, body ? body.clientWidth : 0);
-    var height = max(html.scrollHeight, html.clientHeight, body ? body.scrollHeight : 0, body ? body.clientHeight : 0);
+    var width = max(html.scrollWidth, html.ClientWidth, body ? body.scrollWidth : 0, body ? body.ClientWidth : 0);
+    var height = max(html.scrollHeight, html.ClientHeight, body ? body.scrollHeight : 0, body ? body.ClientHeight : 0);
     var x = -winScroll.scrollLeft + getWindowScrollBarX(element);
     var y = -winScroll.scrollTop;
 
     if (getComputedStyle$1(body || html).direction === 'rtl') {
-      x += max(html.clientWidth, body ? body.clientWidth : 0) - width;
+      x += max(html.ClientWidth, body ? body.ClientWidth : 0) - width;
     }
 
     return {
@@ -2691,12 +2691,12 @@
 
   function getInnerBoundingClientRect(element) {
     var rect = getBoundingClientRect(element);
-    rect.top = rect.top + element.clientTop;
-    rect.left = rect.left + element.clientLeft;
-    rect.bottom = rect.top + element.clientHeight;
-    rect.right = rect.left + element.clientWidth;
-    rect.width = element.clientWidth;
-    rect.height = element.clientHeight;
+    rect.top = rect.top + element.ClientTop;
+    rect.left = rect.left + element.ClientLeft;
+    rect.bottom = rect.top + element.ClientHeight;
+    rect.right = rect.left + element.ClientWidth;
+    rect.width = element.ClientWidth;
+    rect.height = element.ClientHeight;
     rect.x = rect.left;
     rect.y = rect.top;
     return rect;
@@ -3259,9 +3259,9 @@
       var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - tetherOffsetValue : minLen - arrowLen - arrowPaddingMin - tetherOffsetValue;
       var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + tetherOffsetValue : maxLen + arrowLen + arrowPaddingMax + tetherOffsetValue;
       var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
-      var clientOffset = arrowOffsetParent ? mainAxis === 'y' ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
+      var ClientOffset = arrowOffsetParent ? mainAxis === 'y' ? arrowOffsetParent.ClientTop || 0 : arrowOffsetParent.ClientLeft || 0 : 0;
       var offsetModifierValue = state.modifiersData.offset ? state.modifiersData.offset[state.placement][mainAxis] : 0;
-      var tetherMin = popperOffsets[mainAxis] + minOffset - offsetModifierValue - clientOffset;
+      var tetherMin = popperOffsets[mainAxis] + minOffset - offsetModifierValue - ClientOffset;
       var tetherMax = popperOffsets[mainAxis] + maxOffset - offsetModifierValue;
 
       if (checkMainAxis) {
@@ -3342,8 +3342,8 @@
 
       if (isHTMLElement(offsetParent)) {
         offsets = getBoundingClientRect(offsetParent);
-        offsets.x += offsetParent.clientLeft;
-        offsets.y += offsetParent.clientTop;
+        offsets.x += offsetParent.ClientLeft;
+        offsets.y += offsetParent.ClientTop;
       } else if (documentElement) {
         offsets.x = getWindowScrollBarX(documentElement);
       }
@@ -4189,7 +4189,7 @@
 
   const getWidth = () => {
     // https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth#usage_notes
-    const documentWidth = document.documentElement.clientWidth;
+    const documentWidth = document.documentElement.ClientWidth;
     return Math.abs(window.innerWidth - documentWidth);
   };
 
@@ -4218,7 +4218,7 @@
   const _setElementAttributes = (selector, styleProp, callback) => {
     const scrollbarWidth = getWidth();
     SelectorEngine.find(selector).forEach(element => {
-      if (element !== document.body && window.innerWidth > element.clientWidth + scrollbarWidth) {
+      if (element !== document.body && window.innerWidth > element.ClientWidth + scrollbarWidth) {
         return;
       }
 
@@ -4723,7 +4723,7 @@
         return;
       }
 
-      const isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
+      const isModalOverflowing = this._element.scrollHeight > document.documentElement.ClientHeight;
 
       if (!isModalOverflowing) {
         this._element.style.overflowY = 'hidden';
@@ -4752,7 +4752,7 @@
 
 
     _adjustDialog() {
-      const isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
+      const isModalOverflowing = this._element.scrollHeight > document.documentElement.ClientHeight;
       const scrollbarWidth = getWidth();
       const isBodyOverflowing = scrollbarWidth > 0;
 

@@ -1,0 +1,6 @@
+vragenlijst:
+
+- hoe ontvang ik de gegevens van mijn formulier?
+- hoe plak ik de docenten dichter bij elkaar in teams.html
+- hoe zorg ik ervoor dat mijn css niet verloren gaat als ik alle html's in één map gooi?
+- 
