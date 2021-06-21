@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
-  transition: 0.5s;
+  transition: 3s;
 }
 
 #hero .carousel-inner .carousel-item-next,
@@ -442,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
-  background: none;
+  background: #fff;
   font-size: 30px;
   line-height: 0;
   width: auto;
@@ -471,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 12px;
   height: 12px;
   border-radius: 50px;
-  opacity: .6;
+  opacity: 1;
   transition: 0.3s;
 }
 
