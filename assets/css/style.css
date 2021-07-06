@@ -1272,7 +1272,7 @@ img.medium {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-  padding: 0 100px;
+  padding: 0;
 }
 
 .faq .faq-list ul {
@@ -1281,7 +1281,7 @@ img.medium {
 }
 
 .faq .faq-list li + li {
-  margin-top: 15px;
+  margin-top: 21px;
 }
 
 .faq .faq-list li {
@@ -1289,6 +1289,11 @@ img.medium {
   background: #fff;
   border-radius: 4px;
   position: relative;
+}
+
+.faq .faq-list img.align-left {
+    float: left;
+    margin-right:100px;
 }
 
 .faq .faq-list a {
