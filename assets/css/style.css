@@ -527,7 +527,6 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -604,7 +603,23 @@ section {
   content: "/";
 }
 
-@media (max-width: 991px) {
+@media (max-width: 415px) {
+  .breadcrumbs {
+    margin-top: 0px;
+    padding-inline: 5%;
+    padding-top: 28%;
+    }
+    .breadcrumbs h2 {
+      font-size: 17px;
+      font-weight: 300;
+      color: #fff;
+    }
+    .breadcrumbs ol {
+      font-size: 10px;
+    }
+}
+
+@media (min-width: 416px max-width: 991px) {
   .breadcrumbs {
     margin-top: 58px;
   }
@@ -954,13 +969,16 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+
 .about-us .content h2 {
   font-weight: 700;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 24px;
+  line-height: 35px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  overflow: hidden;
 }
+
 
 .about-us .content h3 {
   font-weight: 500;
@@ -1045,8 +1063,18 @@ section {
   margin: 0 2px;
 }
 
+@media (max-width: 991px) {
 .team .member .member-info {
   padding: 25px 15px;
+  height: 170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .team .member .member-info {
+    padding: 25px 15px;
+    height: 220px;
+  }
 }
 
 .team .member .member-info h4 {
@@ -1084,8 +1112,20 @@ img.align-right {
   float: right;
   margin-left: 10px;}
 img.medium {
-  width: 250px;
-  height: 250px;}
+  width: 100%;
+  padding-bottom: 20px;
+  max-width: 340px;
+}
+
+@media (min-height: 1100px) {
+  img.medium {
+    width: 80%;
+    padding-bottom: 20px;
+    max-width: 340px;
+    margin-bottom: auto;
+  }
+
+}
 
 /*--------------------------------------------------------------
 # Our Skills
