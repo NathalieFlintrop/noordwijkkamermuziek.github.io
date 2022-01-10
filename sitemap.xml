@@ -4,103 +4,101 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/index.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/overons.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.60</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/veelgesteldevragen.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.60</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/concerten.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/masterclass.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/team.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/inschrijven.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.60</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/media.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.60</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/steun.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/contact.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>monthly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/kerttu.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/yente.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/duleen.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/nathalie.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.noordwijkkamermuziek.nl/aaron.html</loc>
   <lastmod>2022-01-10T15:21:45+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <changefreq>yearly</changefreq>
   <priority>0.64</priority>
 </url>
 
